@@ -16,9 +16,6 @@ for proxy in proxies:
 
 print("Done.")
 
-for i in v2ray_proxies:
-    print(i.find_all("a"))
-
 proxy_info_links = [proxy.find_all("a")[0].attrs["href"] for proxy in v2ray_proxies]
 connection_links = [None for i in range(len(proxy_info_links))]
 
